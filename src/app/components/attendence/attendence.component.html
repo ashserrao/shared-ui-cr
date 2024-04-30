@@ -1,0 +1,10 @@
+<div class="w-full flex py-4 px-6">
+    <div></div>
+    <span class="flex flex-auto"></span>
+    <button (click)="logger()" mat-raised-button color="primary">{{buttonName}}</button>
+</div>
+<div class="px-6">
+    <ul *ngFor="let entry of log">
+        <li>{{entry}} | {{TimeStamp}}</li>
+    </ul>
+</div>
